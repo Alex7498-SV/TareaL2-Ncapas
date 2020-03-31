@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+</head>
+<body>
+
+	<h1>Inicio de sesión</h1>
+	
+	<form action="" th:action="@{/Validacion}" th:object="${usuario}" method="post">
+	
+		<p>
+			Usuario: <input type="text" th:field="*{usuario}">
+		</p>
+		<p>
+			contraseña: <input type="password" th:field="*{password}">
+		</p>
+		<p>
+			<input type="submit" value="Enviar"><input type="reset" value="Borrar">
+		</p>
+	
+	</form>
+
+</body>
+</html>
